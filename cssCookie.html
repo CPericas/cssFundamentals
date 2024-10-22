@@ -1,0 +1,117 @@
+<!--Task 1: Use CSS to style the chocolate chip cookie recipe according to the following requirements:
+
+Apply different font families, sizes, and styles to the recipe title, ingredients, and steps.
+Set the background color of the header and footer.
+Add padding and margin to elements to enhance spacing and layout.
+Create a border around the recipe to separate it from the rest of the page.
+Use different colors for text and background to improve readability.
+Apply hover effects to links within the recipe, such as the recipe source link.
+Utilize class, id, and at least 1 combinator selector when styling your CSS. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head> <!--This is the Head with the Title and meta info-->
+        <title>Classic Chocolate Chip Cookies recipe</title>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A recipe for Classic Chocolate Chip Cookies.">
+        <meta name="keyword" content="HTML, recipe, WebDevelopment, ChocolateChipCookies">
+        <meta name="author" content="Web Development Mentor">
+        <style>            
+            header {
+                background-color: lightgray;
+                padding: 20px;
+                text-align: center;
+            }
+            footer {
+                background-color: darkgray;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            body {
+                background-color: beige;
+            }
+            .special-text {
+                color: crimson;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            #main-heading {
+                color: rgb(30, 96, 210);
+                font-size: 45px;
+            }
+            footer p {
+                font-size: 12px;
+                color: lightgray;
+            }
+            h2 + p {
+                color: darkolivegreen;
+                font-size: 18px;
+            }
+            .recipe-container {
+                border: 2px solid darkgray;
+                padding: 20px;
+                margin: 20px auto;
+                width: 80%; 
+                background-color: rgba(168, 251, 3, 0.304);
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+            }
+            a {
+                color: darkblue; 
+                text-decoration: none; 
+            }
+
+            a:hover {
+                color: crimson; 
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="main-heading">Classic Chocolate Chip Cookies!</h1>
+        </header>
+        <div class="recipe-container">
+            <p>A tried and true recipe for a classic chocolate chip cookie!</p>
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7088317.jpg&q=60&c=sc&poi=auto&orient=true&h=512" alt="Delicious looking Chocolate Chip Cookies.">
+            <!--Above is a hyperlink that puts an image on my site. If the picture does not load, it will state "Delicious looking Chocolate Chip Cookies." -->
+
+            <h2 style="font-family: cursive; color: blue; font-size: 30px;">INGREDIENTS</h2>
+            <p>These ingredients will make 1 dozen cookies</p>
+            <UL><!--This is an unorganized list-->
+                <LI>1 cup (2 sticks) unsalted butter, softened</LI>
+                <li>3/4 cup granulated sugar</li> 
+                <li>3/4 cup packed brown sugar</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>2 large eggs</li>
+                <li>2 1/4 cups all-purpose flour</li>
+                <li>1 teaspoon baking soda</li>
+                <li>1/2 teaspoon salt</li>
+                <li>2 cups semisweet chocolate chips</li>
+                <li>1 cup chopped nuts (optional)</li>
+            </UL>
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; color: darkblue; font-size: 20;">STEPS</h3>
+            <ol><!--This is an organized list-->
+                <li>Preheat the oven to 375°F (190°C). Line baking sheets with parchment paper or silicone baking mats.</li>
+                <li>In a large mixing bowl, cream together the softened butter, granulated sugar, brown sugar, and vanilla extract until light and fluffy.</li>
+                <li>Add the eggs, one at a time, beating well after each addition.</li>
+                <li>In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined.</li>
+                <li>Stir in the chocolate chips and chopped nuts (if using) until evenly distributed throughout the dough.</li>
+                <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.</li>
+                <li>Bake in the preheated oven for 9 to 11 minutes, or until the edges are golden brown.</li>
+                <li>Remove from the oven and allow the cookies to cool on the baking sheets for a few minutes before transferring them to wire racks to cool completely.</li>
+            </ol>
+        </div>
+        <hr><!--I added this visual break to make the site flow better-->
+        <p>You can also visit this site for this same recipe <a href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016">Chocolate Chip Cookie recipe</a></p>
+        <!--Above is a hyperlink to another website with this recipe-->
+
+        <p class="special-text">Don't forget to enjoy your Classic Chocolate Chip Cookies with a tall glass of milk &#45; the perfect combination!</p> <!--There is a use of HTML special characters on this line.-->
+        <footer>
+            <p>&copy; 2024 Coding Temple Assignment</p>
+        </footer>
+    </body>
+</html>
